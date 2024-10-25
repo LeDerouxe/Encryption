@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+<variable
+    name="plainText"
+    type="String" />
+    <variable
+        name="encryptedText"
+        type="String" />
+</data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#191919"
+        tools:context=".MainActivity">
+
+        <EditText
+            android:id="@+id/valET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Text"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.147" />
+
+        <EditText
+            android:id="@+id/keyET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="388dp"
+            android:ems="10"
+            android:fontFamily="@font/alata"
+            android:hint="Key"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/valET"
+            app:layout_constraintVertical_bias="0.226" />
+
+        <Button
+            android:id="@+id/submitBUT"
+            android:layout_width="108dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#be3131"
+            android:fontFamily="@font/alata"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="Encrypt"
+            android:textColor="@color/black"
+            android:textSize="16.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.451" />
+
+        <TextView
+            android:id="@+id/resTV"
+            android:layout_width="316dp"
+            android:layout_height="202dp"
+            android:fontFamily="@font/alata"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#750E21"
+            android:textIsSelectable="true"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="111dp"
+            android:layout_height="56dp"
+            android:backgroundTint="#be3131"
+            android:fontFamily="@font/alata"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:text="Decrypt"
+            android:textColor="@color/black"
+            android:textSize="16.5sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.57" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
